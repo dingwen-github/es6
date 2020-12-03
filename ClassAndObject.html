@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClassAndObject</title>
+</head>
+<body>
+<script>
+    /*类*/
+    class Star {
+        /*构造函数*/
+        constructor(name, age) {
+            /*this 即为当前实例对象*/
+
+            /*类的公有属性放在构造方法内*/
+            this.name = name
+            this.age = age
+            /*构造函数返回当前对象*/
+        }
+
+        /*方法*/
+        sing(song){
+            console.log(this.name + song)
+        }
+    }
+
+    let eason = new Star('陈奕迅',40)
+    eason.sing('红玫瑰')
+    console.log(eason)
+
+
+</script>
+
+</body>
+</html>
